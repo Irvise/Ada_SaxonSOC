@@ -2,7 +2,6 @@
 *.ali
 *.stderr
 *.stdout
-/obj
 
 # Blacklist startup-gen files
 # startup-gen
