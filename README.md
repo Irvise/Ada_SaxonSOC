@@ -14,10 +14,10 @@ Very briefly
 3.1 The library can be found under the different `.ads` files.
 4. Program the logic. The blink delay is done by forcing the CPU into a lengthy loop.
 5. Tranform the generated executable `elf` file into a binary one with: `riscv32-elf-objcopy -O binary blink blink.bin`
-5. Load the program with `u-boot`. 
-6. Jump to the address where the "main" function resides.
-6.1 The reason we cannot jump to the initial addres of `0x80000000` and we need to jump to another addres (in my case `0x80000064`, your may differ) is because the stack is incorrectly set up for `startup-gen`.
-7. Profit
+6. Load the program with `u-boot`. 
+7. Jump to the address where the "main" function resides.
+7.1 The reason we cannot jump to the initial addres of `0x80000000` and we need to jump to another addres (in my case `0x80000064`, your may differ) is because the stack is incorrectly set up for `startup-gen`.
+8. Profit
 
 ## What do you need to try it out
 	
